@@ -3,9 +3,16 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function CustomButton(props) {
+  var dataTestId = props.testId;
+  if (!dataTestId) {
+    dataTestId = "custom-button";
+  } else {
+    dataTestId = "custom-button" + props.testId;
+  }
   return (
     <Button
-      data-testid="custom-button"
+      id={props.id}
+      data-testid={dataTestId}
       colorScheme={props.color}
       size={props.size}
       variant={props.variant}
@@ -24,33 +31,17 @@ function CustomButton(props) {
 }
 
 CustomButton.propTypes = {
-  color: PropTypes.shape({
-    colorScheme: PropTypes.string,
-  }),
-  size: PropTypes.shape({
-    size: PropTypes.string,
-  }),
-  variant: PropTypes.shape({
-    variant: PropTypes.string,
-  }),
-  lIcon: PropTypes.shape({
-    leftIcon: PropTypes.any,
-  }),
-  rIcon: PropTypes.shape({
-    rightIcon: PropTypes.any,
-  }),
-  hover: PropTypes.shape({
-    _hover: PropTypes.string,
-  }),
-  active_bg: PropTypes.shape({
-    _active_bg: PropTypes.string,
-  }),
-  active_border: PropTypes.shape({
-    _active_border: PropTypes.string,
-  }),
-  content: PropTypes.shape({
-    content: PropTypes.string,
-  }),
+  id: PropTypes.string,
+  testId: PropTypes.string,
+  color: PropTypes.string,
+  size: PropTypes.string,
+  variant: PropTypes.string,
+  lIcon: PropTypes.any,
+  rIcon: PropTypes.any,
+  hover: PropTypes.string,
+  active_bg: PropTypes.string,
+  active_border: PropTypes.string,
+  content: PropTypes.string,
 };
 
 export default CustomButton;
