@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-// pages import test1
+// pages import
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ForOFor from "./pages/404";
 import Home from "./pages/homepage";

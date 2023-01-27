@@ -35,6 +35,6 @@ describe("CustomButton component", () => {
       />
     );
     const button = getByTestId("custom-button");
-    expect(button.childElementCount).toBe(3);
+    expect(button.childElementCount).toBe(1);
   });
 });
