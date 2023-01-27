@@ -11,9 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="*" element={<ForOFor />} />
+        <Route path="/" element={<Layout data-testid='layout'/>}>
+          <Route index element={<Home data-testid='home'/>} />
+          <Route path="*" element={<ForOFor data-testid='404'/>} />
         </Route>
       </Routes>
     </BrowserRouter>

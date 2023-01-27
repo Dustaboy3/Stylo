@@ -1,8 +1,8 @@
 import React from 'react';
-
+import SplitComponent from '../components/molecules/splitComponent';
 function Home() {
     return (
-        <h1>this is the homepage</h1>
+        <SplitComponent data-testid='home'/>
     );
 }
 
