@@ -3,9 +3,16 @@ import { Text } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
 function CustomText(props) {
+  var dataTestId = props.testId;
+  if (!dataTestId) {
+    dataTestId = "custom-text";
+  } else {
+    dataTestId = "custom-text" + props.testId;
+  }
   return (
     <Text
-      data-testid="custom-text"
+      id={props.id}
+      data-testid={dataTestId}
       fontSize={props.fontSize}
       color={props.color}
       as={props.type}
@@ -16,18 +23,12 @@ function CustomText(props) {
 }
 
 CustomText.propTypes = {
-  fontSize: PropTypes.shape({
-    colorfontSizeScheme: PropTypes.string,
-  }),
-  color: PropTypes.shape({
-    color: PropTypes.string,
-  }),
-  type: PropTypes.shape({
-    as: PropTypes.string,
-  }),
-  content: PropTypes.shape({
-    content: PropTypes.any,
-  }),
+  id: PropTypes.string,
+  testId: PropTypes.string,
+  fontSize: PropTypes.string,
+  color: PropTypes.string,
+  type: PropTypes.string,
+  content: PropTypes.any,
 };
 
 export default CustomText;
