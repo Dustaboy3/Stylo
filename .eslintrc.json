@@ -1,4 +1,9 @@
 {
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "env": {
         "browser": true,
         "es2021": true
@@ -11,11 +16,18 @@
     "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest",
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "sourceType": "module",
-        "parser": "@babel/plugin-syntax-jsx"
+        "parser": "babel/eslint"
     },
     "plugins": [
         "react"
     ],
-    "rules": {}
+    "rules": {
+        "no-undef": "off",
+        "eqeqeq": "warn",
+        "strict": "off"
+    }
 }
