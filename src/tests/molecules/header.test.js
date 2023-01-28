@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Header from "../../../components/molecules/header";
+import Header from "../../components/molecules/header";
 
 describe("Header component", () => {
   it("should render header and header title", () => {

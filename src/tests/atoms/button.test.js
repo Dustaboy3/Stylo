@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import CustomButton from "../../../components/atoms/button";
+import CustomButton from "../../components/atoms/button";
 import { PhoneIcon, BellIcon } from "@chakra-ui/icons";
 
 describe("CustomButton component", () => {
@@ -9,9 +9,7 @@ describe("CustomButton component", () => {
       <CustomButton color="cyan" size="lg" variant="ghost" />
     );
     const button = getByTestId("custom-button");
-    expect(button).toHaveStyle(
-      `background: var(--chakra - colors - cyan - 400)`
-    );
+    expect(button).toHaveStyle(`background: var(--chakra-colors-cyan-400)`);
     expect(button).toHaveStyle(`height: var(--chakra-sizes-12);`);
     expect(button).toHaveStyle(`font-size: var(--chakra-fontSizes-lg);`);
     expect(button).toHaveStyle(`background: var(--chakra-colors-transparent);`);

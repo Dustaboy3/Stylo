@@ -20,9 +20,9 @@ function CustomButton(props) {
       rightIcon={props.rIcon}
       _hover={{ bg: props.hover }}
       _active={{
-        bg: props.active_bg,
+        bg: props.activeBg,
         transform: "scale(0.90)",
-        borderColor: props.active_border,
+        borderColor: props.activeBorder,
       }}
     >
       {props.content}
@@ -39,8 +39,8 @@ CustomButton.propTypes = {
   lIcon: PropTypes.any,
   rIcon: PropTypes.any,
   hover: PropTypes.string,
-  active_bg: PropTypes.string,
-  active_border: PropTypes.string,
+  activeBg: PropTypes.string,
+  activeBorder: PropTypes.string,
   content: PropTypes.string,
 };
 

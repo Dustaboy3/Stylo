@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import CustomInput from "../../../components/atoms/input";
+import CustomInput from "../../components/atoms/input";
 
 describe("CustomInput", () => {
   it("renders an input with custom props", () => {
