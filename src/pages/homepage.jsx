@@ -1,9 +1,7 @@
-import React from 'react';
-import SplitComponent from '../components/molecules/splitComponent';
+import React from "react";
+
 function Home() {
-    return (
-        <SplitComponent data-testid='home'/>
-    );
+  return <div>test</div>;
 }
 
 export default Home;
