@@ -8,7 +8,6 @@ function Header() {
       <CustomText
         id="headerTitle"
         testId="_headerTitle"
-        className={styles.headerText}
         fontSize="40px"
         color="#FFF"
         type="b"
