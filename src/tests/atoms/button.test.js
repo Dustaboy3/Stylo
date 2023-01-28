@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import CustomButton from "../../../components/atoms/button";
+import CustomButton from "../../components/atoms/button";
 import { PhoneIcon, BellIcon } from "@chakra-ui/icons";
 
 describe("CustomButton component", () => {

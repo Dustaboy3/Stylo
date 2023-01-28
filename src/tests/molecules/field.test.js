@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Field from "../../../components/molecules/field";
+import Field from "../../components/molecules/field";
 
 describe("Field component", () => {
   test("renders without crashing", () => {
