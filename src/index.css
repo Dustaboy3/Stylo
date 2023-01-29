@@ -12,10 +12,40 @@ code {
     monospace;
 }
 
+/* HEADER */
 #headerTitle {
   line-height: 85px;
 }
 
+/* Footer */
 #footerTitle {
   line-height: 45px;
+}
+
+/* HomePage */
+.hp-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hp-container div {
+  flex-basis: 50%;
+}
+
+.hp-container #leftField {
+  border-right: 2px solid black;
+}
+
+.hp-container #rightField {
+  border-left: 2px solid black;
+}
+
+.hp-container #leftField #leftField-button {
+  top: 50%
+}
+
+.hp-container #rightField #rightField-button {
+  top: 50%
 }

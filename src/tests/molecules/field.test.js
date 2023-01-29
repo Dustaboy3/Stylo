@@ -19,10 +19,10 @@ describe("Field component", () => {
     expect(button).toBeInTheDocument();
   });
 
-  test("renders with className", () => {
-    render(<Field class="_custom-class" />);
+  test("renders with correct className", () => {
+    render(<Field />);
     const field = screen.getByTestId("custom-field");
-    expect(field).toHaveClass("field_custom-class");
+    expect(field).toHaveClass("field");
   });
 
   test("renders button with props", () => {

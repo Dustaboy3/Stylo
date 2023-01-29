@@ -11,13 +11,9 @@ function Field(props) {
     dataTestId = "custom-field" + props.testId;
   }
   return (
-    <div
-      id={props.id}
-      data-testid={dataTestId}
-      className={styles.field + props.class}
-    >
+    <div id={props.id} data-testid={dataTestId} className={styles.field}>
       <Custombutton
-        id={props.id}
+        id={props.id + "-button"}
         testId={dataTestId}
         color={props.color}
         size={props.size}
@@ -25,6 +21,11 @@ function Field(props) {
         activeBg={props.activeBg}
         activeBorder={props.activeBorder}
         content={props.content}
+        height={props.height}
+        width={props.width}
+        border={props.border}
+        borderColor={props.borderColor}
+        fontSize={props.fontSize}
       />
     </div>
   );
@@ -33,13 +34,17 @@ function Field(props) {
 Field.propTypes = {
   id: PropTypes.string,
   testId: PropTypes.string,
-  class: PropTypes.string,
   color: PropTypes.string,
   size: PropTypes.string,
   variant: PropTypes.string,
   activeBg: PropTypes.string,
   activeBorder: PropTypes.string,
   content: PropTypes.string,
+  height: PropTypes.string,
+  width: PropTypes.string,
+  border: PropTypes.string,
+  borderColor: PropTypes.string,
+  fontSize: PropTypes.string,
 };
 
 export default Field;
