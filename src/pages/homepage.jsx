@@ -5,7 +5,7 @@ function Home() {
   const [cursorX, setCursorX] = useState(0);
   const [cursorY, setCursorY] = useState(0);
   const [color, setColor] = useState("");
-  const [display, setdisplay] = useState("none");
+  const [display, setDisplay] = useState("none");
 
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
@@ -21,7 +21,7 @@ function Home() {
 
   function handleHover(event, color, display) {
     setColor(color);
-    setdisplay(display);
+    setDisplay(display);
   }
 
   return (
@@ -68,15 +68,15 @@ function Home() {
       </div>
       <div
         style={{
-          zIndex: 7,
+          zIndex: 8,
           display: display,
-          width: "50px",
-          height: "50px",
+          width: "45px",
+          height: "45px",
           borderRadius: "50%",
           backgroundColor: color,
           position: "absolute",
-          top: cursorY - 18,
-          left: cursorX - 18,
+          top: cursorY,
+          left: cursorX,
         }}
       ></div>
     </div>
