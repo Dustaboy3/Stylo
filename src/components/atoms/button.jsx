@@ -24,6 +24,12 @@ function CustomButton(props) {
         transform: "scale(0.90)",
         borderColor: props.activeBorder,
       }}
+      height={props.height}
+      width={props.width}
+      border={props.border}
+      borderColor={props.borderColor}
+      fontSize={props.fontSize}
+      zIndex={props.zIndex}
     >
       {props.content}
     </Button>
@@ -42,6 +48,12 @@ CustomButton.propTypes = {
   activeBg: PropTypes.string,
   activeBorder: PropTypes.string,
   content: PropTypes.string,
+  height: PropTypes.string,
+  width: PropTypes.string,
+  border: PropTypes.string,
+  borderColor: PropTypes.string,
+  fontSize: PropTypes.string,
+  zIndex: PropTypes.string,
 };
 
 export default CustomButton;
