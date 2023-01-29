@@ -29,6 +29,7 @@ function CustomButton(props) {
       border={props.border}
       borderColor={props.borderColor}
       fontSize={props.fontSize}
+      zIndex={props.zIndex}
     >
       {props.content}
     </Button>
@@ -52,6 +53,7 @@ CustomButton.propTypes = {
   border: PropTypes.string,
   borderColor: PropTypes.string,
   fontSize: PropTypes.string,
+  zIndex: PropTypes.string,
 };
 
 export default CustomButton;

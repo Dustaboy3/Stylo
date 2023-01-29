@@ -26,6 +26,7 @@ function Field(props) {
         border={props.border}
         borderColor={props.borderColor}
         fontSize={props.fontSize}
+        zIndex={props.zIndex}
       />
     </div>
   );
@@ -45,6 +46,7 @@ Field.propTypes = {
   border: PropTypes.string,
   borderColor: PropTypes.string,
   fontSize: PropTypes.string,
+  zIndex: PropTypes.string,
 };
 
 export default Field;
